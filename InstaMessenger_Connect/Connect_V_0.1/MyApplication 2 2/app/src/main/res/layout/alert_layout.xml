@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/album_name"
+        android:id="@+id/txtAlbumName"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAlbumName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/txtPrivacy"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schPrivacy"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textOn="Public"
+        android:textOff="Private" />
+</LinearLayout>

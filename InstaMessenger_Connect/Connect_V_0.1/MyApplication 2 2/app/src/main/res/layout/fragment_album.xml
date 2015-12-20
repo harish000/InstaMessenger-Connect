@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.trishaan.albumdemo.BlankFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_CreateAlbum"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imgAdd"
+        android:src="@drawable/addalbum"
+        android:paddingRight="5dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/txtCreate"
+            android:textSize="30dp"
+            android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Albums"
+            android:textSize="25dp"
+            android:id="@+id/txtMyAlbums"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Album to view. Create one!"
+            android:textSize="15dp"
+            android:id="@+id/txtNoAlbum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMyAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invited Albums"
+            android:textSize="25dp"
+            android:id="@+id/txtInvitedAlbums"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Album Invites Found!"
+            android:textSize="15dp"
+            android:id="@+id/txtNoAlbumInvite"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvInvitedAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Albums"
+            android:textSize="25dp"
+            android:id="@+id/txtPubAlbums"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Public Albums Found!"
+            android:id="@+id/txtNoPubAlbum"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPublicAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

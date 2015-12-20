@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.mad.albumapp.AlbumActivityIntergrated">
+    <item android:id="@+id/action_chg_privacy" android:title="@string/chg_privacy"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_invite" android:title="@string/action_invite"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_invite_stats" android:title="@string/action_invi_stats"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_mod_list" android:title="@string/mod_list"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_delete" android:title="@string/action_delete"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
